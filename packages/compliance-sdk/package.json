@@ -1,0 +1,19 @@
+{
+  "name": "@lumex/compliance-sdk",
+  "version": "0.1.0",
+  "description": "AML screening and KYC provider integration helpers for Lumex",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@lumex/shared": "*",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}

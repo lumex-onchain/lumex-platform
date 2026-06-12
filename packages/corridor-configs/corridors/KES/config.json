@@ -1,0 +1,37 @@
+{
+  "code": "KES",
+  "name": "Kenya",
+  "currency": "KES",
+  "assets": [
+    {
+      "assetCode": "USDC",
+      "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+      "decimals": 7
+    },
+    {
+      "assetCode": "MGUSD",
+      "issuer": "PLACEHOLDER_MGUSD_ISSUER",
+      "decimals": 7,
+      "notes": "MoneyGram MGUSD — strong MoneyGram agent presence in Kenya makes this a priority on-ramp."
+    }
+  ],
+  "bankingPartner": {
+    "name": "TBD — M-Pesa / Safaricom integration or licensed Kenyan bank",
+    "apiEndpoint": "https://placeholder.banking-partner.ke/api",
+    "settlementMethod": "mobile_money",
+    "notes": "TODO (wave:medium): Research Stellar anchor precedents for KES. Existing anchors: check SDF anchor directory. M-Pesa Daraja API integration would enable mobile money settlement."
+  },
+  "limits": {
+    "minDepositUsd": 10,
+    "maxDepositUsd": 5000,
+    "dailyLimitUsd": 25000
+  },
+  "feeStructure": {
+    "depositFeePct": 0.5,
+    "withdrawalFeePct": 0.75,
+    "minFeeUsd": 1.0
+  },
+  "mgusdEnabled": true,
+  "regulatoryNotes": "Central Bank of Kenya (CBK) regulates forex. Lumex requires partnership with a CBK-licensed forex bureau or bank for KES settlement.",
+  "status": "planned"
+}

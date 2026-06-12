@@ -1,0 +1,39 @@
+{
+  "code": "NGN",
+  "name": "Nigeria",
+  "currency": "NGN",
+  "assets": [
+    {
+      "assetCode": "USDC",
+      "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+      "decimals": 7,
+      "notes": "Circle USDC on Stellar — primary deposit asset"
+    },
+    {
+      "assetCode": "MGUSD",
+      "issuer": "PLACEHOLDER_MGUSD_ISSUER",
+      "decimals": 7,
+      "notes": "MoneyGram MGUSD — launched June 2026. TODO (wave:trivial): update issuer address once confirmed on mainnet."
+    }
+  ],
+  "bankingPartner": {
+    "name": "TBD — requires local Nigerian EMI or licensed PSSP",
+    "apiEndpoint": "https://placeholder.banking-partner.ng/api",
+    "settlementMethod": "local",
+    "notes": "TODO (wave:medium): Identify and onboard a CBN-licensed PSSP for NGN settlement. Options: Paystack, Flutterwave, Grey Finance."
+  },
+  "limits": {
+    "minDepositUsd": 10,
+    "maxDepositUsd": 10000,
+    "dailyLimitUsd": 50000,
+    "notes": "CBN forex limits apply. Individual daily FX limit $10,000 USD equivalent."
+  },
+  "feeStructure": {
+    "depositFeePct": 0.5,
+    "withdrawalFeePct": 0.75,
+    "minFeeUsd": 1.0
+  },
+  "mgusdEnabled": true,
+  "regulatoryNotes": "CBN (Central Bank of Nigeria) regulates forex transactions. Lumex must partner with a licensed FX dealer or PSSP. Users subject to BVN (Bank Verification Number) requirements for KYC TIER_2+.",
+  "status": "planned"
+}

@@ -1,0 +1,36 @@
+{
+  "code": "ZAR",
+  "name": "South Africa",
+  "currency": "ZAR",
+  "assets": [
+    {
+      "assetCode": "USDC",
+      "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+      "decimals": 7
+    },
+    {
+      "assetCode": "EURC",
+      "issuer": "GDHU6WRG4IEQXM5NZ4BMPKOXHW76MZM4Y2IEMFDVXBSDP6SJY4ITNPP",
+      "decimals": 7
+    }
+  ],
+  "bankingPartner": {
+    "name": "TBD — SARB-licensed forex dealer",
+    "apiEndpoint": "https://placeholder.banking-partner.za/api",
+    "settlementMethod": "local",
+    "notes": "TD Markets + ZARC Coin proves this corridor is viable. Explore partnership or similar SARB license path."
+  },
+  "limits": {
+    "minDepositUsd": 10,
+    "maxDepositUsd": 50000,
+    "dailyLimitUsd": 250000
+  },
+  "feeStructure": {
+    "depositFeePct": 0.3,
+    "withdrawalFeePct": 0.4,
+    "minFeeUsd": 2.0
+  },
+  "mgusdEnabled": false,
+  "regulatoryNotes": "SARB (South African Reserve Bank) and FSCA regulate forex brokers. Most mature regulatory framework in SSA for this product type.",
+  "status": "testnet"
+}

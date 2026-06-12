@@ -1,0 +1,31 @@
+{
+  "code": "BRL",
+  "name": "Brazil",
+  "currency": "BRL",
+  "assets": [
+    {
+      "assetCode": "USDC",
+      "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+      "decimals": 7
+    }
+  ],
+  "bankingPartner": {
+    "name": "TBD — BCB-licensed institution with PIX API access",
+    "apiEndpoint": "https://placeholder.banking-partner.br/api",
+    "settlementMethod": "instant",
+    "notes": "Brazil PIX (launched 2020) enables real-time BRL settlement 24/7. TODO (wave:medium): Research Stellar BRL anchors and PIX API integration via Open Finance Brazil."
+  },
+  "limits": {
+    "minDepositUsd": 10,
+    "maxDepositUsd": 20000,
+    "dailyLimitUsd": 100000
+  },
+  "feeStructure": {
+    "depositFeePct": 0.4,
+    "withdrawalFeePct": 0.5,
+    "minFeeUsd": 1.5
+  },
+  "mgusdEnabled": false,
+  "regulatoryNotes": "Banco Central do Brasil (BCB) regulates forex. Capital controls compliance required for cross-border transfers above BRL 10,000.",
+  "status": "planned"
+}

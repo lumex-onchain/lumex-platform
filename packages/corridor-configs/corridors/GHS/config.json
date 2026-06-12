@@ -1,0 +1,31 @@
+{
+  "code": "GHS",
+  "name": "Ghana",
+  "currency": "GHS",
+  "assets": [
+    {
+      "assetCode": "USDC",
+      "issuer": "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+      "decimals": 7
+    }
+  ],
+  "bankingPartner": {
+    "name": "TBD — Bank of Ghana licensed forex bureau",
+    "apiEndpoint": "https://placeholder.banking-partner.gh/api",
+    "settlementMethod": "local",
+    "notes": "TODO (wave:medium): Identify BoG-licensed forex bureau with API. MTN Mobile Money GHS integration possible."
+  },
+  "limits": {
+    "minDepositUsd": 10,
+    "maxDepositUsd": 5000,
+    "dailyLimitUsd": 20000
+  },
+  "feeStructure": {
+    "depositFeePct": 0.6,
+    "withdrawalFeePct": 0.85,
+    "minFeeUsd": 1.0
+  },
+  "mgusdEnabled": false,
+  "regulatoryNotes": "Bank of Ghana regulates forex. High GHS devaluation pressure makes FX access a key user need in this corridor.",
+  "status": "planned"
+}

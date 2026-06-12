@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "LumexCorridorConfig",
+  "type": "object",
+  "required": ["code", "name", "currency", "assets", "bankingPartner", "limits", "feeStructure"],
+  "properties": {
+    "code":     { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "name":     { "type": "string" },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["assetCode", "issuer", "decimals"],
+        "properties": {
+          "assetCode": { "type": "string" },
+          "issuer":    { "type": "string" },
+          "decimals":  { "type": "integer" }
+        }
+      }
+    },
+    "bankingPartner": {
+      "type": "object",
+      "required": ["name", "apiEndpoint", "settlementMethod"],
+      "properties": {
+        "name":             { "type": "string" },
+        "apiEndpoint":      { "type": "string" },
+        "settlementMethod": { "type": "string", "enum": ["wire", "local", "mobile_money", "instant"] }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "required": ["minDepositUsd", "maxDepositUsd", "dailyLimitUsd"],
+      "properties": {
+        "minDepositUsd":  { "type": "number" },
+        "maxDepositUsd":  { "type": "number" },
+        "dailyLimitUsd":  { "type": "number" }
+      }
+    },
+    "feeStructure": {
+      "type": "object",
+      "required": ["depositFeePct", "withdrawalFeePct", "minFeeUsd"],
+      "properties": {
+        "depositFeePct":    { "type": "number" },
+        "withdrawalFeePct": { "type": "number" },
+        "minFeeUsd":        { "type": "number" }
+      }
+    },
+    "regulatoryNotes": { "type": "string" },
+    "mgusdEnabled":    { "type": "boolean" },
+    "status":          { "type": "string", "enum": ["active", "testnet", "planned"] }
+  }
+}

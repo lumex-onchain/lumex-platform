@@ -1,0 +1,1 @@
+export { getQuoteById } from './getQuote';

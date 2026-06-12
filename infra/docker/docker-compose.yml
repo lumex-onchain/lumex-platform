@@ -1,0 +1,126 @@
+version: '3.9'
+
+services:
+  # Stellar Anchor Platform (official image)
+  anchor-platform:
+    image: stellar/anchor-platform:latest
+    ports:
+      - "8080:8080"   # SEP endpoints
+      - "8085:8085"   # Platform API (internal)
+    volumes:
+      - ./anchor-config/stellar-anchor.yml:/config/stellar-anchor.yml:ro
+      - ./anchor-config/assets.yaml:/config/assets.yaml:ro
+    environment:
+      - STELLAR_ANCHOR_CONFIG=/config/stellar-anchor.yml
+    depends_on:
+      - postgres
+      - kafka
+    networks:
+      - lumex-net
+
+  # Business server (SEP-12 / SEP-38)
+  business-server:
+    build:
+      context: ../../packages/anchor-business-server
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - DATABASE_URL=postgresql://lumex:lumex@postgres:5432/lumex
+      - JWT_SECRET=${JWT_SECRET:-dev-secret}
+      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-dev-webhook-secret}
+    volumes:
+      - ../../packages/anchor-business-server/src:/app/src
+    depends_on:
+      - postgres
+    networks:
+      - lumex-net
+
+  # Bridge core (deposit/withdrawal/P&L)
+  bridge-core:
+    build:
+      context: ../../packages/bridge-core
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3002:3002"
+    environment:
+      - BRIDGE_PORT=3002
+      - DATABASE_URL=postgresql://lumex:lumex@postgres:5432/lumex
+      - REDIS_URL=redis://redis:6379
+      - METAAPI_TOKEN=${METAAPI_TOKEN:-}
+      - SOROBAN_RPC_URL=${SOROBAN_RPC_URL:-https://soroban-testnet.stellar.org}
+      - ESCROW_CONTRACT_ADDRESS=${ESCROW_CONTRACT_ADDRESS:-}
+      - BRIDGE_SECRET_KEY=${BRIDGE_SECRET_KEY:-}
+      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-dev-webhook-secret}
+    volumes:
+      - ../../packages/bridge-core/src:/app/src
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - lumex-net
+
+  # Frontend dashboard
+  frontend:
+    build:
+      context: ../../packages/bridge-frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../../packages/bridge-frontend/src:/app/src
+    networks:
+      - lumex-net
+
+  # PostgreSQL
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=lumex
+      - POSTGRES_PASSWORD=lumex
+      - POSTGRES_DB=lumex
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - lumex-net
+
+  # Redis (Bull queues + caching)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - lumex-net
+
+  # Kafka (event streaming)
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    ports:
+      - "9092:9092"
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
+    depends_on:
+      - zookeeper
+    networks:
+      - lumex-net
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    environment:
+      - ZOOKEEPER_CLIENT_PORT=2181
+    networks:
+      - lumex-net
+
+volumes:
+  pgdata:
+
+networks:
+  lumex-net:
+    driver: bridge
