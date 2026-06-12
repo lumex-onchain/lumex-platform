@@ -4,11 +4,11 @@ Thanks for contributing to Lumex! This guide covers the backend services reposit
 
 ## Wave Programme
 
-Issues labeled `wave:high`, `wave:medium`, `wave:trivial`, and `good-first-issue` are eligible for Stellar Wave Programme bounties. Find them on the [issues page](https://github.com/lumex-phantom/lumex-platform/issues).
+Issues labeled `wave:high`, `wave:medium`, `wave:trivial`, and `good-first-issue` are eligible for Stellar Wave Programme bounties. Find them on the [issues page](https://github.com/lumex-onchain/lumex-platform/issues).
 
 ## Development Setup
 
-1. Clone the repo: `git clone https://github.com/lumex-phantom/lumex-platform.git`
+1. Clone the repo: `git clone https://github.com/lumex-onchain/lumex-platform.git`
 2. Configure GitHub Packages auth (see README for `.npmrc` setup)
 3. `npm install`
 4. Copy `infra/docker/.env.example` to `infra/docker/.env` and fill in values

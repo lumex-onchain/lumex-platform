@@ -24,4 +24,4 @@ assignees: ''
 
 ## Related Issues
 
-<!-- Links to related issues in other lumex-phantom repos if applicable -->
+<!-- Links to related issues in other lumex-onchain repos if applicable -->

@@ -43,7 +43,7 @@ Generate a token at GitHub → Settings → Developer settings → Personal acce
 ## Getting Started
 
 ```bash
-git clone https://github.com/lumex-phantom/lumex-platform.git
+git clone https://github.com/lumex-onchain/lumex-platform.git
 cd lumex-platform
 cp infra/docker/.env.example infra/docker/.env
 npm install
@@ -56,12 +56,12 @@ This repository uses [semantic versioning](https://semver.org/) (MAJOR.MINOR.PAT
 
 ## Related Repositories
 
-Part of the [lumex-phantom](https://github.com/lumex-phantom) organization:
+Part of the [lumex-onchain](https://github.com/lumex-onchain) organization:
 
-- [lumex-platform](https://github.com/lumex-phantom/lumex-platform) — Backend services (this repo)
-- [lumex-contracts](https://github.com/lumex-phantom/lumex-contracts) — Soroban smart contracts
-- [lumex-dashboard](https://github.com/lumex-phantom/lumex-dashboard) — React frontend
-- [lumex-sdk](https://github.com/lumex-phantom/lumex-sdk) — TypeScript client SDK
+- [lumex-platform](https://github.com/lumex-onchain/lumex-platform) — Backend services (this repo)
+- [lumex-contracts](https://github.com/lumex-onchain/lumex-contracts) — Soroban smart contracts
+- [lumex-dashboard](https://github.com/lumex-onchain/lumex-dashboard) — React frontend
+- [lumex-sdk](https://github.com/lumex-onchain/lumex-sdk) — TypeScript client SDK
 
 ## Contributing
 

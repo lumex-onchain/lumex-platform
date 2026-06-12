@@ -8,8 +8,8 @@
 
 ---
 
-[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-3%20open-brightgreen?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Acorridor+is%3Aopen)
-[![Wave Points](https://img.shields.io/badge/Wave%20Points-300%20available-gold?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Acorridor)
+[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-3%20open-brightgreen?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Acorridor+is%3Aopen)
+[![Wave Points](https://img.shields.io/badge/Wave%20Points-300%20available-gold?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Acorridor)
 [![JSON Schema](https://img.shields.io/badge/JSON%20Schema-validated-blue?style=flat-square)](schemas/corridor.schema.json)
 
 </div>
@@ -219,9 +219,9 @@ npm run validate -w packages/corridor-configs
 
 | # | Title | Complexity | Points |
 |---|---|---|---|
-| [#25](https://github.com/lumex-phantom/lumex/issues/25) | Add XOF (CFA Franc) corridor config — Francophone West Africa | 🟢 Trivial | 100 pts |
-| [#26](https://github.com/lumex-phantom/lumex/issues/26) | KES banking partner research and M-Pesa integration notes | 🟡 Medium | 150 pts |
-| [#27](https://github.com/lumex-phantom/lumex/issues/27) | Update MGUSD issuer address in NGN and KES configs | 🟢 Trivial | 100 pts |
+| [#25](https://github.com/lumex-onchain/lumex/issues/25) | Add XOF (CFA Franc) corridor config — Francophone West Africa | 🟢 Trivial | 100 pts |
+| [#26](https://github.com/lumex-onchain/lumex/issues/26) | KES banking partner research and M-Pesa integration notes | 🟡 Medium | 150 pts |
+| [#27](https://github.com/lumex-onchain/lumex/issues/27) | Update MGUSD issuer address in NGN and KES configs | 🟢 Trivial | 100 pts |
 
 Issues #25 and #27 are labelled `good-first-issue` — ideal starting points for contributors new to Lumex or to open source in general.
 

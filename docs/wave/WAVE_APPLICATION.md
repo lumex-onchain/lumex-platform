@@ -11,7 +11,7 @@ Lumex
 The first open-source middleware bridge connecting a Stellar SEP-compliant Anchor Platform to MetaTrader 4/5 — enabling forex brokers to offer blockchain-speed settlement, ZK-proof P&L, and on-chain risk management.
 
 ## Project URL
-https://github.com/lumex-phantom/lumex
+https://github.com/lumex-onchain/lumex
 
 ## What does this project do?
 
@@ -111,4 +111,4 @@ We commit to:
 - Publishing CHANGELOG.md updates after each merged Wave PR
 
 ## Contact
-GitHub: https://github.com/lumex-phantom
+GitHub: https://github.com/lumex-onchain

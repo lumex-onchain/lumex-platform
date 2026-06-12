@@ -8,8 +8,8 @@
 
 ---
 
-[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-8%20open-brightgreen?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Abridge-core+is%3Aopen)
-[![Wave Points](https://img.shields.io/badge/Wave%20Points-1500%20available-gold?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Abridge-core)
+[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-8%20open-brightgreen?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Abridge-core+is%3Aopen)
+[![Wave Points](https://img.shields.io/badge/Wave%20Points-1500%20available-gold?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Abridge-core)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=flat-square)](https://nodejs.org/)
 
@@ -173,15 +173,15 @@ The test suite in `tests/depositHandler.test.ts` mocks all external dependencies
 
 | # | Title | Complexity | Points |
 |---|---|---|---|
-| [#1](https://github.com/lumex-phantom/lumex/issues/1) | Implement idempotency guard on deposit callback | 🔴 High | 200 pts |
-| [#2](https://github.com/lumex-phantom/lumex/issues/2) | Implement MetaApi SDK integration for MT4 credit/debit | 🔴 High | 200 pts |
-| [#3](https://github.com/lumex-phantom/lumex/issues/3) | Implement PostgreSQL DAL — user ledger map + deposits | 🔴 High | 200 pts |
-| [#4](https://github.com/lumex-phantom/lumex/issues/4) | Implement Soroban escrow contract invocation | 🔴 High | 200 pts |
-| [#5](https://github.com/lumex-phantom/lumex/issues/5) | Implement multi-sig withdrawal gate | 🔴 High | 200 pts |
-| [#6](https://github.com/lumex-phantom/lumex/issues/6) | Add SEP-6 withdraw call to Anchor Platform | 🟡 Medium | 150 pts |
-| [#7](https://github.com/lumex-phantom/lumex/issues/7) | Add Bull queue for reliable async deposit processing | 🟡 Medium | 150 pts |
-| [#8](https://github.com/lumex-phantom/lumex/issues/8) | Implement ZK proof generation for P&L (Protocol 25) | 🔴 High | 200 pts |
-| [#9](https://github.com/lumex-phantom/lumex/issues/9) | Add real-time deposit status WebSocket feed | 🟡 Medium | 150 pts |
+| [#1](https://github.com/lumex-onchain/lumex/issues/1) | Implement idempotency guard on deposit callback | 🔴 High | 200 pts |
+| [#2](https://github.com/lumex-onchain/lumex/issues/2) | Implement MetaApi SDK integration for MT4 credit/debit | 🔴 High | 200 pts |
+| [#3](https://github.com/lumex-onchain/lumex/issues/3) | Implement PostgreSQL DAL — user ledger map + deposits | 🔴 High | 200 pts |
+| [#4](https://github.com/lumex-onchain/lumex/issues/4) | Implement Soroban escrow contract invocation | 🔴 High | 200 pts |
+| [#5](https://github.com/lumex-onchain/lumex/issues/5) | Implement multi-sig withdrawal gate | 🔴 High | 200 pts |
+| [#6](https://github.com/lumex-onchain/lumex/issues/6) | Add SEP-6 withdraw call to Anchor Platform | 🟡 Medium | 150 pts |
+| [#7](https://github.com/lumex-onchain/lumex/issues/7) | Add Bull queue for reliable async deposit processing | 🟡 Medium | 150 pts |
+| [#8](https://github.com/lumex-onchain/lumex/issues/8) | Implement ZK proof generation for P&L (Protocol 25) | 🔴 High | 200 pts |
+| [#9](https://github.com/lumex-onchain/lumex/issues/9) | Add real-time deposit status WebSocket feed | 🟡 Medium | 150 pts |
 
 **Recommended contributor profile:** TypeScript/Node.js dominant; REST API and webhook experience; financial or payments systems experience a plus. For issues #3–4, `stellar-sdk` and Soroban RPC knowledge is required.
 

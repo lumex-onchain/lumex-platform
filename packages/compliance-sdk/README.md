@@ -8,8 +8,8 @@
 
 ---
 
-[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-1%20open-brightgreen?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Acompliance-sdk+is%3Aopen)
-[![Wave Points](https://img.shields.io/badge/Wave%20Points-150%20available-gold?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Acompliance-sdk)
+[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-1%20open-brightgreen?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Acompliance-sdk+is%3Aopen)
+[![Wave Points](https://img.shields.io/badge/Wave%20Points-150%20available-gold?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Acompliance-sdk)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square)](https://www.typescriptlang.org/)
 
 </div>
@@ -156,7 +156,7 @@ recordMt4Error();
 
 | # | Title | Complexity | Points |
 |---|---|---|---|
-| [#24](https://github.com/lumex-phantom/lumex/issues/24) | Implement Chainalysis KYT v2 address screening with Redis caching | 🟡 Medium | 150 pts |
+| [#24](https://github.com/lumex-onchain/lumex/issues/24) | Implement Chainalysis KYT v2 address screening with Redis caching | 🟡 Medium | 150 pts |
 
 **Recommended contributor profile:** Experience integrating third-party compliance/financial APIs; familiarity with AML/KYC regulatory concepts; Redis caching patterns.
 

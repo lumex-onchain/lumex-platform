@@ -8,8 +8,8 @@
 
 ---
 
-[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-5%20open-brightgreen?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Abusiness-server+is%3Aopen)
-[![Wave Points](https://img.shields.io/badge/Wave%20Points-750%20available-gold?style=flat-square)](https://github.com/lumex-phantom/lumex/issues?q=label%3Apackage%3Abusiness-server)
+[![Wave Issues](https://img.shields.io/badge/Wave%20Issues-5%20open-brightgreen?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Abusiness-server+is%3Aopen)
+[![Wave Points](https://img.shields.io/badge/Wave%20Points-750%20available-gold?style=flat-square)](https://github.com/lumex-onchain/lumex/issues?q=label%3Apackage%3Abusiness-server)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square)](https://www.typescriptlang.org/)
 
 </div>
@@ -133,11 +133,11 @@ curl http://localhost:3001/sep38/prices
 
 | # | Title | Complexity | Points |
 |---|---|---|---|
-| [#10](https://github.com/lumex-phantom/lumex/issues/10) | Implement PostgreSQL DAL for users and KYC state | 🟡 Medium | 150 pts |
-| [#11](https://github.com/lumex-phantom/lumex/issues/11) | Implement SEP-38 quote storage and retrieval | 🟡 Medium | 150 pts |
-| [#12](https://github.com/lumex-phantom/lumex/issues/12) | Implement live FX price feed with Redis caching | 🟡 Medium | 150 pts |
-| [#13](https://github.com/lumex-phantom/lumex/issues/13) | Integrate Sumsub KYC webhook for status updates | 🟡 Medium | 150 pts |
-| [#14](https://github.com/lumex-phantom/lumex/issues/14) | Implement SEP-12 putCustomer with Sumsub applicant creation | 🟡 Medium | 150 pts |
+| [#10](https://github.com/lumex-onchain/lumex/issues/10) | Implement PostgreSQL DAL for users and KYC state | 🟡 Medium | 150 pts |
+| [#11](https://github.com/lumex-onchain/lumex/issues/11) | Implement SEP-38 quote storage and retrieval | 🟡 Medium | 150 pts |
+| [#12](https://github.com/lumex-onchain/lumex/issues/12) | Implement live FX price feed with Redis caching | 🟡 Medium | 150 pts |
+| [#13](https://github.com/lumex-onchain/lumex/issues/13) | Integrate Sumsub KYC webhook for status updates | 🟡 Medium | 150 pts |
+| [#14](https://github.com/lumex-onchain/lumex/issues/14) | Implement SEP-12 putCustomer with Sumsub applicant creation | 🟡 Medium | 150 pts |
 
 **Recommended contributor profile:** Node.js / TypeScript REST API experience; understanding of webhook-driven flows; KYC or payment provider integration experience a plus.
 
